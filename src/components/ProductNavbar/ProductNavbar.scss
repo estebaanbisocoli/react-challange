@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+.product-navbar-container {
+    width: 100%;
+    height: 64px;
+    background-color: $light-background;
+    padding-left: $horizontal-padding;
+    padding-right: $horizontal-padding;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    h4 {
+        cursor: pointer;
+        color: $light-navbar-text;
+    }
+}
