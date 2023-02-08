@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+.navbar-container {
+  .MuiAppBar-root {
+    min-height: 88px;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .MuiToolbar-root {
+    min-height: 88px;
+    padding-left: $horizontal-padding;
+    padding-right: $horizontal-padding;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search-container {
+    width: 696px;
+    height: 40px;
+    margin-left: 68px;
+    margin-right: auto; //Make searchbar ignore justify content
+    position: relative;
+
+    .search-bar {
+      box-sizing: border-box;
+      position: relative;
+      width: 696px;
+      height: 40px;
+      background: $white;
+      border-radius: 20px;
+      padding-left: 40px;
+      color: black;
+    }
+    .search-icon {
+      position: absolute;
+      top: 7px;
+      left: 10px;
+      z-index: 2;
+      svg {
+        font-size: 26px;
+        color: black;
+      }
+
+    }
+  }
+  .navbar-actions {
+    display: flex;
+    flex-direction: row;
+    gap: $navbar-actions-gap;
+    .navbar-action {
+      cursor: pointer;
+      align-items: center;
+      gap: 6px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
