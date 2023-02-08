@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+.cart-items-container {
+  flex: 1;
+  .cart-items-title {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    h2 {
+      color: $primary-color;
+    }
+    span {
+        color: $light-text;
+       vertical-align: baseline;
+    }
+  }
+}
