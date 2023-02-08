@@ -1,0 +1,49 @@
+@import "./styles/variables";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.bold {
+  font-weight: 700;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.regular {
+  font-weight: 400;
+}
+.text-lg {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.text-md {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.text-normal {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.text-xs {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 15px;
+}
+.text-xxs {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.lh16 {
+  line-height: 16px;
+}
