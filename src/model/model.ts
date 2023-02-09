@@ -1,3 +1,5 @@
+import { IPack, IProduct, ProductType } from "./type";
+
 const cartProducts: Array<IProduct | IPack> = [
   {
     id: 1,
