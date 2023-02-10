@@ -1,12 +1,17 @@
 $primary-color: #091625;
-$light-navbar-text: #535C67;
-$light-text: #6B737C;
+$light-navbar-text: #535c67;
+$light-text: #6b737c;
 $dark-icon-text: #001342;
 $light-primary-color: #3a4451;
 $light-background: #e6e8e9;
 $black: #000;
 $white: #fff;
 
-
 $horizontal-padding: 92px;
-$navbar-actions-gap: 24px
+$navbar-actions-gap: 24px;
+
+@mixin text-normal-mixin {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 16px;
+}
