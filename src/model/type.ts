@@ -24,3 +24,6 @@ export interface ICartItem {
 export interface IOnQuantityChangeCallback {
   (product: IProduct | IPack, newQuantity: number): void;
 }
+export interface IOnCartItemRemove {
+  (product: IProduct | IPack): void
+}

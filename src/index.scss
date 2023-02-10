@@ -46,10 +46,23 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-size: 14px;
 }
+.text-xxxs {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 12px;
+}
+.text-xxxxs {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 10px;
+}
 
 .lh16 {
   line-height: 16px;
 }
 .lh24 {
   line-height: 24px;
+}
+.color-primary {
+  color: $primary-color;
 }

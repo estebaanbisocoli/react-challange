@@ -1,6 +1,7 @@
 @import "../../styles/variables.scss";
 .cart-items-container {
   flex: 1;
+  flex-direction: column;
   .cart-items-title {
     display: flex;
     flex-direction: row;

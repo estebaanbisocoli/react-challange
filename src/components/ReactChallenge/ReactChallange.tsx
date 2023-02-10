@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next';
 import "./ReactChallange.scss"
 import CartItems from '../CartItems/CartItems';
 import Navbar from '../Navbar/Navbar';
 import ProductNavbar from '../ProductNavbar/ProductNavbar';
 import model from '../../model/model';
-import { ICartItem } from '../../model/type';
+import { ICartItem, IOnCartItemRemove, IOnQuantityChangeCallback, IPack, IProduct } from '../../model/type';
+
+
+
 
 //Only use to mock cart
 const initialState: ICartItem[] = model.cartProducts.map((product, index) => {
@@ -14,15 +16,32 @@ const initialState: ICartItem[] = model.cartProducts.map((product, index) => {
     else return { quantity: 20, product }
 })
 
-export default function ReactChallange() {
-    const { t } = useTranslation()
+const useCart = ()=> {
     const [cart, setCart] = useState<ICartItem[]>(initialState)
+    const onQuantityChange: IOnQuantityChangeCallback = (product: IProduct | IPack, newQuantity: number) => {
+        setCart(cart.map((item)=> {
+            if(item.product.id === product.id) {
+                return {product: item.product, quantity: newQuantity}
+            } else {
+                return item;
+            }
+        }))
+    }
+    const onCartItemRemove: IOnCartItemRemove = (product) => {
+        setCart(cart.filter((item)=> item.product.id !== product.id))
+    }
+    return {cart, onQuantityChange, onCartItemRemove}
+}
+
+export default function ReactChallange() {
+    const {cart, onQuantityChange, onCartItemRemove} = useCart();
+
     return (
         <div>
             <Navbar />
             <ProductNavbar />
             <div className='cart-container'>
-                <CartItems cart={cart} />
+                <CartItems cart={cart} onQuantityChange={onQuantityChange} onCartItemRemove={onCartItemRemove}/>
                 <div style={{ flex: 0.5 }}></div>
             </div>
         </div>
