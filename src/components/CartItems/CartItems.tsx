@@ -8,11 +8,11 @@ import {
   IProduct,
   ProductType,
 } from "../../model/type";
+import Divider from "../Divider/Divider";
 import "./CartItems.scss";
 import CartPack from "./CartPack";
 import CartProduct from "./CartProduct";
 
-const Divider = () => <div className="cart-items-divider"></div>
 export default function CartItems({
   cart,
   onQuantityChange,

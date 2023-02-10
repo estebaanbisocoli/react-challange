@@ -6,7 +6,7 @@ const CATEGORIES = ["PRODUCT_NAVBAR_ALL", "PRODUCT_NAVBAR_PACKAGING", "PRODUCT_N
 
 const CategoryItem = ({ text }: { text: string }) => {
     const { t } = useTranslation()
-    return <h4 className='text-xs regular lh-16'>{t(text)}</h4>
+    return <h4 className='text-xs regular lh16'>{t(text)}</h4>
 }
 
 export default function ProductNavbar() {
