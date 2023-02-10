@@ -21,3 +21,6 @@ export interface ICartItem {
     product: IProduct | IPack,
     quantity: number
 }
+export interface IOnQuantityChangeCallback {
+  (product: IProduct | IPack, newQuantity: number): void;
+}

@@ -3,7 +3,7 @@ import { IPack, IProduct, ProductType } from "./type";
 const cartProducts: Array<IProduct | IPack> = [
   {
     id: 1,
-    name: "My christmas Pack",
+    name: "My Christmas Pack",
     products: [
       { name: "Cardboard box", extraData: "container" },
       { name: "Unisex Short Sleeve T-Shirt", extraData: "Green, Small" },
