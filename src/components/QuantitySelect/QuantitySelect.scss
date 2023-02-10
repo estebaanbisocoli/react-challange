@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+.quantity-select-container {
+  h3 {
+    display: inline;
+  }
+  margin-top: 12px;
+  .quantity-select-select {
+    .MuiOutlinedInput-notchedOutline {
+      border: 0;
+    }
+    .MuiSelect-select {
+        @include text-normal-mixin();
+        font-weight: 700;
+        color: #091625;
+        padding: 0 0 0 6px;
+
+    }
+    .MuiSvgIcon-root {
+        color: #091625;
+    }
+  }
+}
+.quantity-select-options {
+    max-height: 50px;
+}
