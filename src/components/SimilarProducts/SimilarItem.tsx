@@ -1,6 +1,6 @@
 import { t } from "i18next";
 import React from "react";
-import { IProduct, ISimilarProduct } from "../../model/type";
+import { ISimilarProduct } from "../../model/type";
 import { formatCurrencyUSDWithoutDecimals } from "../../utils/currency";
 import "./SimilarItem.scss";
 export default function SimilarItem({ product }: { product: ISimilarProduct }) {
@@ -19,7 +19,7 @@ export default function SimilarItem({ product }: { product: ISimilarProduct }) {
           {formatCurrencyUSDWithoutDecimals(product.price.max)}
         </span>
         <div className="text-xxs lh16 regular is-primary">
-          <span className="is-light-text">{t("SIMILAR_MINIMUN")}{" "}</span>
+          <span className="is-light-text">{t("SIMILAR_MINIMUN")} </span>
           <span>24</span>
         </div>
       </div>

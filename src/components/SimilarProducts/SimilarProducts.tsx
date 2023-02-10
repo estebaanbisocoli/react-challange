@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { IProduct, ISimilarProduct } from "../../model/type";
+import { ISimilarProduct } from "../../model/type";
 import SimilarItem from "./SimilarItem";
 import "./SimilarProducts.scss";
 export default function SimilarProducts({

@@ -3,7 +3,7 @@ import "./QuantitySelect.scss"
 import classNames from 'classnames'
 import { MenuItem, Select } from '@mui/material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-export default function QuantitySelect({ className, text, max, value, onChange }: { className?: string, text: string, max: number, value: number, onChange: (value: number) => void, }) {
+export default function QuantitySelect({ className, text, max, value, onChange }: { className?: string, text: string, max?: number, value: number, onChange: (value: number) => void, }) {
     return (
         <div className={classNames("quantity-select-container", className)}>
             <h3 className='text-normal lh16 semi-bold'>{text}</h3>

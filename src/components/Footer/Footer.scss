@@ -1,0 +1,70 @@
+@import "../../styles/variables.scss";
+
+.footer-container {
+  min-height: 540px;
+  background-color: $light-background;
+  width: 100%;
+  padding: 80px $horizontal-padding 0 $horizontal-padding;
+  .footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .footer-main-col {
+    flex: 1;
+    p {
+      margin-top: 24px;
+      padding-right: 50px;
+    }
+    .footer-phone {
+      .footer-phone-icon {
+        margin-bottom: -3px;
+        margin-right: 6px;
+        font-size: 18px;
+      }
+      margin-top: 24px;
+    }
+    .footer-social {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 40px;
+    }
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    h3 {
+      margin-bottom: 24px;
+    }
+    span {
+      margin-bottom: 24px;
+      color: $light-primary-color;
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 112px;
+    color: $light-navbar-text;
+    .footer-intl {
+      display: flex;
+      flex-direction: row;
+      > div {
+        margin-left: 32px;
+      }
+      .footer-region-picker {
+        margin-left: 6px;
+        img {
+          margin-right: 4px;
+          &:last-child {
+            margin-bottom: -4px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./ReactChallange.scss";
 import CartItems from "../CartItems/CartItems";
 import Navbar from "../Navbar/Navbar";
@@ -13,6 +13,7 @@ import {
 } from "../../model/type";
 import CartTotal from "../CartTotal/CartTotal";
 import SimilarProducts from "../SimilarProducts/SimilarProducts";
+import Footer from "../Footer/Footer";
 
 //Only use to mock cart
 const initialState: ICartItem[] = model.cartProducts.map((product, index) => {
@@ -47,18 +48,21 @@ export default function ReactChallange() {
   const { cart, onQuantityChange, onCartItemRemove } = useCart();
 
   return (
-    <div>
+    <>
       <Navbar />
-      <ProductNavbar />
-      <div className="cart-container">
-        <CartItems
-          cart={cart}
-          onQuantityChange={onQuantityChange}
-          onCartItemRemove={onCartItemRemove}
-        />
-        <CartTotal cart={cart} />
-      </div>
-      <SimilarProducts similarProducts={model.similarProducts}/>
-    </div>
+      <main>
+        <ProductNavbar />
+        <div className="cart-container">
+          <CartItems
+            cart={cart}
+            onQuantityChange={onQuantityChange}
+            onCartItemRemove={onCartItemRemove}
+          />
+          <CartTotal cart={cart} />
+        </div>
+        <SimilarProducts similarProducts={model.similarProducts} />
+      </main>
+      <Footer></Footer>
+    </>
   );
 }
