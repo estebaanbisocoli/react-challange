@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.similar-products-container {
+    margin: 56px $horizontal-padding 120px $horizontal-padding;
+    .similar-products-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+}

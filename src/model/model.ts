@@ -1,4 +1,4 @@
-import { IPack, IProduct, ProductType } from "./type";
+import { IPack, IProduct, ISimilarProduct, ProductType } from "./type";
 
 const cartProducts: Array<IProduct | IPack> = [
   {
@@ -29,7 +29,7 @@ const cartProducts: Array<IProduct | IPack> = [
   },
 ];
 
-const similarProducts: IProduct[] = [
+const similarProducts: ISimilarProduct[] = [
   {
     id: 4,
     image: "https://images2.imgbox.com/d8/1a/7MYJ8zra_o.png",

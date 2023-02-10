@@ -12,6 +12,7 @@ import {
   IProduct,
 } from "../../model/type";
 import CartTotal from "../CartTotal/CartTotal";
+import SimilarProducts from "../SimilarProducts/SimilarProducts";
 
 //Only use to mock cart
 const initialState: ICartItem[] = model.cartProducts.map((product, index) => {
@@ -57,6 +58,7 @@ export default function ReactChallange() {
         />
         <CartTotal cart={cart} />
       </div>
+      <SimilarProducts similarProducts={model.similarProducts}/>
     </div>
   );
 }

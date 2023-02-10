@@ -7,7 +7,10 @@ export interface IProduct {
   name: string;
   type: ProductType;
   image: string;
-  price: number | { min: number; max: number };
+  price: number;
+}
+export interface ISimilarProduct extends Omit<IProduct, "price"> {
+  price: { min: number; max: number };
 }
 export interface IItems {
   name: string;
@@ -18,12 +21,12 @@ export interface IPack extends IProduct {
 }
 
 export interface ICartItem {
-    product: IProduct | IPack,
-    quantity: number
+  product: IProduct | IPack;
+  quantity: number;
 }
 export interface IOnQuantityChangeCallback {
   (product: IProduct | IPack, newQuantity: number): void;
 }
 export interface IOnCartItemRemove {
-  (product: IProduct | IPack): void
+  (product: IProduct | IPack): void;
 }
