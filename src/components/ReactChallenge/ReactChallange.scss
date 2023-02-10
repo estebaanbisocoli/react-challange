@@ -1,10 +1,9 @@
 @import "../../styles/variables.scss";
 .cart-container {
-    padding-left: $horizontal-padding;
-    padding-right: $horizontal-padding;
-    padding-top: 32px;
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }

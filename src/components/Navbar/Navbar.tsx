@@ -4,10 +4,16 @@ import Toolbar from "@mui/material/Toolbar";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import "./Navbar.scss";
 import { useTranslation } from "react-i18next";
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-const NavbarAction = ({ text, icon }: { text: string, icon: React.ReactNode }) => {
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+const NavbarAction = ({
+  text,
+  icon,
+}: {
+  text: string;
+  icon: React.ReactNode;
+}) => {
   return (
     <div className="navbar-action">
       {icon}
@@ -26,14 +32,23 @@ export default function Navbar() {
             <Logo fill="#FFF" height={48} />
           </div>
           <div className="search-container">
-            <div className="search-icon" >
+            <div className="search-icon">
               <SearchOutlinedIcon />
             </div>
-            <input className="search-bar  text-xs lh16 regular" placeholder="Search products"></input>
+            <input
+              className="search-bar  text-xs lh16 regular"
+              placeholder="Search products"
+            ></input>
           </div>
           <div className="navbar-actions">
-            <NavbarAction icon={<PersonOutlineOutlinedIcon fontSize="large" />} text={t("NAVBAR_SIGN_IN")} />
-            <NavbarAction icon={<ShoppingCartOutlinedIcon fontSize="large" />} text={t("NAVBAR_CART")} />
+            <NavbarAction
+              icon={<PersonOutlineOutlinedIcon fontSize="large" />}
+              text={t("NAVBAR_SIGN_IN")}
+            />
+            <NavbarAction
+              icon={<ShoppingCartOutlinedIcon fontSize="large" />}
+              text={t("NAVBAR_CART")}
+            />
           </div>
         </Toolbar>
       </AppBar>

@@ -1,13 +1,13 @@
 .similar-item-container {
-display: flex;
-flex-direction: column;
-img {
+  display: flex;
+  flex-direction: column;
+  img {
     margin-bottom: 16px;
-}
-.similar-item-info {
+  }
+  .similar-item-info {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+  }
 }

@@ -36,8 +36,7 @@ export default function CartTotal({ cart }: { cart: ICartItem[] }) {
           {t("CART_CHECKOUT")}
         </Button>
         <Button variant="outlined" size="large" fullWidth>
-        {t("CART_CONTINUE_SHOPPING")}
-
+          {t("CART_CONTINUE_SHOPPING")}
         </Button>
       </div>
     </div>

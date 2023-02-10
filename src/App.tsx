@@ -1,11 +1,8 @@
-import React from 'react';
-import ReactChallange from './components/ReactChallenge/ReactChallange';
+import React from "react";
+import ReactChallange from "./components/ReactChallenge/ReactChallange";
 
 function App() {
-  return (
-    
-      <ReactChallange />
-  );
+  return <ReactChallange />;
 }
 
 export default App;

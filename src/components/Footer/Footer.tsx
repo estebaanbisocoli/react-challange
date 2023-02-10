@@ -90,7 +90,6 @@ export default function Footer() {
           <div>
             <span className="text-xxs lh16 regular">{t("FOOTER_REGION")}</span>
             <span className="footer-region-picker">
-          
               <span className="text-xxs lh16 bold is-primary">
                 {t("FOOTER_LANGUAGE_EN")}
               </span>

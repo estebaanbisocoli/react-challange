@@ -1,6 +1,10 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { IOnCartItemRemove, IOnQuantityChangeCallback, IPack } from "../../model/type";
+import {
+  IOnCartItemRemove,
+  IOnQuantityChangeCallback,
+  IPack,
+} from "../../model/type";
 import { formatCurrencyUSD } from "../../utils/currency";
 import QuantitySelect from "../QuantitySelect/QuantitySelect";
 import "./CartProductAndPack.scss";
@@ -14,7 +18,7 @@ export default function CartPack({
   pack: IPack;
   quantity: number;
   onEdit?: () => void;
-  onRemove: IOnCartItemRemove,
+  onRemove: IOnCartItemRemove;
   onQuantityChange: IOnQuantityChangeCallback;
 }) {
   const { t } = useTranslation();
@@ -47,7 +51,7 @@ export default function CartPack({
         <div className="cart-item-pack-actions text-xxxs lh24 semi-bold">
           <a>Edit Pack</a>
           <span className="light-pack-color">|</span>
-          <a onClick={()=>onRemove(pack)}>Remove</a>
+          <a onClick={() => onRemove(pack)}>Remove</a>
         </div>
       </div>
       <div className="cart-item-price">
