@@ -11,13 +11,11 @@ import "./CartProductAndPack.scss";
 export default function CartPack({
   pack,
   quantity,
-  onEdit,
   onRemove,
   onQuantityChange,
 }: {
   pack: IPack;
   quantity: number;
-  onEdit?: () => void;
   onRemove: IOnCartItemRemove;
   onQuantityChange: IOnQuantityChangeCallback;
 }) {

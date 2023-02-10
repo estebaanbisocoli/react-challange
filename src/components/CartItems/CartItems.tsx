@@ -5,7 +5,6 @@ import {
   IOnCartItemRemove,
   IOnQuantityChangeCallback,
   IPack,
-  IProduct,
   ProductType,
 } from "../../model/type";
 import Divider from "../Divider/Divider";
